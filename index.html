@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/records.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Crud User</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
         <button type="button" class="button blue" id="cadastrarUsuario">
             Cadastrar usuário
         </button>
-        <table class="records">
+        <table class="records" id="corpo-tabela">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -29,16 +29,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                 <td>Maria</td>
                 <td>Maria@maria.com</td>
                 <td>(11) 9999-8888</td>
                 <td>São paulo</td>
                 <td>
                     <button type="button" class="button green">Editar</button>
-                    <button type="button" class="button red">Editar</button>
+                    <button type="button" class="button red">Excluir</button>
                 </td>
-                </tr>
+                </tr> -->
                 </tbody>
         </table>
         <div class="modal" id="modal">
@@ -48,14 +48,14 @@
                     <span class="modal-close" id="modal-close">&#10006</span>
                 </header>
                 <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome">
-                    <input type="text" class="modal-field" placeholder="E-mail">
-                    <input type="text" class="modal-field" placeholder="Celular">
-                    <input type="text" class="modal-field" placeholder="Cidade">
+                    <input type="text" class="modal-field" placeholder="Nome" id="nome">
+                    <input type="text" class="modal-field" placeholder="E-mail" id="email">
+                    <input type="text" class="modal-field" placeholder="Celular" id="tel">
+                    <input type="text" class="modal-field" placeholder="Cidade" id="city">
                    
                 </form>
                 <footer class="modal-footer">
-                    <button class="button green">
+                    <button class="button green" id="saveValue">
                         Salvar
                     </button>
                     <button class="button blue">
